@@ -2,6 +2,7 @@
 .bash_history
 .psql_history
 *.dump
+.swp
 
 # Python and Django
 *.pyc

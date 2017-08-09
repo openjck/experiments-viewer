@@ -18,7 +18,10 @@ RUN apk --no-cache add \
     py-cffi \
     postgresql-dev \
     postgresql-client \
-    nodejs
+    nodejs \
+    openjdk8-jre
+
+ENV JAVA_HOME /usr/lib/jvm/default-jvm
 
 COPY requirements.txt /app/requirements.txt
 RUN pip install -U pip && \
